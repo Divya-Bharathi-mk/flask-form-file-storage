@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <h1>Welcome to {{ name }} our company {{ company }}</h1>
+            <p>Velon Interiors specializes in premium woodwork, delivering elegant and durable designs for modern living spaces. We focus on quality craftsmanship, customized solutions, and attention to detail to bring your interiors to life.</p>
+            <h3>J54,</h3>
+            <h3>Bazar street,</h3>
+            <h3>Veerappanar Temple road,</h3>
+            <h3>Allinagaram - Theni</h3>
+        </div>
+        <div class="col-6 ">
+            <img src="{{url_for('static',filename='Skills.png')}}" alt="LOGO">
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

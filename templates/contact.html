@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+  {% if message %}
+    <div class="alert alert-success">{{ message }}</div>
+    {% endif %}
+
+<form method="post">
+    <input type="text" name="name" placeholder="Enter your name" class="form-control mb-2" required>
+    <input type="email"  name="email" placeholder="Enter your mail id" class="form-control mb-2" required>
+    <textarea name="message" class="form-control mb-2"></textarea>
+    <button class="btn btn-primary">send</button>
+</form>
+
+{% endblock %}
